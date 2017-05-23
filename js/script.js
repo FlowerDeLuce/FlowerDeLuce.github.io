@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});
 		
 	
-    $(".header-container").sticky({topSpacing:0});
+    $(".header").sticky({topSpacing:0});
 
   	$('.main-menu--mobile').click( function(){
 		$(this).toggleClass('active');
