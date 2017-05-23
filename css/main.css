@@ -39,7 +39,9 @@
   .main-menu__list.active {
     display: block;
     right: 0;
-    transition: all .5s; }
+    transition: all .5s;
+    z-index: 999;
+    background: #fff; }
   .main-menu__item {
     display: block;
     background: #fff;
@@ -124,7 +126,7 @@
   width: 100%;
   background: #fff;
   position: absolute;
-  z-index: 10;
+  z-index: 998 !important;
   border-bottom: 1px solid lightgrey; }
 
 .header-container {
@@ -139,7 +141,7 @@
   -ms-flex-pack: justify;
   max-width: 1440px;
   margin: 0 auto;
-    margin-background: #fff; }
+  background: #fff; }
 
 .header__logo {
   display: inline-block;
