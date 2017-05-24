@@ -1,0 +1,150 @@
+.download_button {
+  background: #5397d0; 
+  margin: 20px auto;
+  text-decoration: none;
+  display: block;
+  width: 220px;
+  height: 60px;
+  padding: 1px;
+  box-shadow: 0 1px 2px 0 grey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: 0 0 0 1px black;
+}
+
+.download_button .filename {
+  font-size: 14px;
+  margin: 10px 0px 0px 5px;
+}
+.download_button .filesize {
+  margin: 10px 10px 0;  
+}
+
+
+.download_button .downloadicon{
+  position: relative;
+  float: right;
+  margin: 10px 10px 10px 0;
+  width: 100px;
+  height: 80px;
+}
+
+@-webkit-keyframes movedown {
+  0% {
+    -webkit-transform: translateY(-1.5em);
+    opacity:0;
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    opacity:1;
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+    opacity:0;
+  }
+}
+@-moz-keyframes movedown {
+  0% {
+    transform: translateY(-10px);
+    opacity:0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity:1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity:0;
+  }
+}
+@-o-keyframes movedown {
+  0% {
+    -o-transform: translateY(10px);
+    opacity:0;
+  }
+  50% {
+    -o-transform: translateY(0);
+    opacity:1;
+  }
+  100% {
+    -o-transform: translateY(10px);
+    opacity:0;
+  }
+}
+@keyframes movedown {
+  0% {
+    transform: translateY(-10px);
+    opacity:0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity:1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity:0;
+  }
+}
+
+.download_button .cloud{
+  width: 80px;
+  height: 20px;
+  background-color: #fff;   
+  border-radius: 30px;
+  position: absolute; 
+  top:20px;
+  left: 20px
+}
+.download_button .cloud:before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 50px;
+  background-color: #fff;   
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: -25px 0 0 10px #fff;  
+}
+
+.download_button .cloud .arrowdown {
+  background: #e7746f;
+  position: absolute;
+  top: 0px;
+  left: 40px;    
+  width: 3px;
+  height: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  
+  -webkit-animation: movedown 2s infinite linear;
+  -moz-animation: movedown 2s infinite linear;
+  -o-animation: movedown 2s infinite linear;
+  animation: movedown 2s infinite linear;
+}
+
+.download_button .cloud .arrowdown:before,
+.download_button .cloud .arrowdown:after {
+  top:5px;
+  content: "";
+  position: absolute;
+  background: #e7746f;
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.download_button .cloud .arrowdown:before {
+  -webkit-transform:rotate(45deg);
+  -webkit-transform-origin: 70% 90%;
+}
+.download_button .cloud .arrowdown:after {
+  -webkit-transform:rotate(-45deg);
+  -webkit-transform-origin: 30% 90%;
+}
