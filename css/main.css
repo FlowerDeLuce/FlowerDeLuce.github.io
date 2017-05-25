@@ -54,11 +54,12 @@
   z-index: 2; }
 
 .header {
-  width: 100%;
+  width: 100% !important;
   background: #fff;
   position: absolute;
   z-index: 998 !important;
-  border-bottom: 1px solid lightgrey; }
+  border-bottom: 1px solid lightgrey;
+  left: 0; }
 
 .header-container {
   display: -webkit-box;
@@ -118,11 +119,13 @@ a.active-link {
   display: block; }
 
 .skills {
+  width: 100%;
   overflow: hidden;
   position: relative;
   background: #e9e9e9;
   padding: 0 10px 50px;
-  min-height: 90vh; }
+  min-height: 90vh;
+  box-sizing: border-box; }
   .skills .section__heading {
     margin-top: 100px; }
 
